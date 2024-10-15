@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Protest+Strike&display=swap');
+/*index css*/
+body {
+  background-image: url(../assets/background.png);
+    background-size: 100%;
+    background-color: #182331;
+    background-attachment: fixed;
+    font-family: "Roboto Slab", serif;
+    color: gold;
+    margin: 0;
+
+}/*header css*/
+header {
+    display: flex;
+    background-color: #020d1c;
+    list-style: none;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;   
+    zoom: 1.4; 
+}
+header a{
+    text-decoration: none;
+    color:gold;
+}
+ul{
+    color:#0f2438 ;
+    background-color: #408296;
+    border: 2px solid #303c47;
+    border-radius: 20px;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    padding-right:10px;
+    padding-left: 20px;
+}
+/*hero section css*/
+#hero {
+
+    color: #ffffff;
+    justify-content: center;
+    padding:  0;
+    position: relative; 
+
+}
+.hero-image {
+    width: 100%;
+
+
+position: relative;
+height: 500px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 30%;
+    height: 70%;
+    margin: 0;
+
+    zoom: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+.hero-button {
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-left:70px;
+    
+}
+.hero-button:hover{
+    transform: scale(1.15); /* Enlarge the card by 5% */
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5); /* Add a glowing shadow */
+}
+/*games list css*/
+#game-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 10px solid red;
+}
+
+#game-list th,
+#game-list td {
+    border: 10px solid red;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#game-list img {
+    width: 150px;
+    height: 200px;
+}
+tr img:hover{
+        transform: scale(1.15); /* Enlarge the card by 5% */
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5); /* Add a glowing shadow */
+
+}
+
+/*---games pages css---*/
+/*pictures slider*/
+  .slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.slider img{
+    width: 750px;
+      display: none;
+  margin: 20px 2px;
+  
+  }
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+.next{
+    right:50%;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+/*game description*/
+.description {
+    font-family: "Protest Strike", sans-serif;
+    position: absolute;
+    width: 500px;
+    right:40px; 
+    bottom:25%; 
+    color: white; 
+    font-size: 25px;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 50px;
+}/*game trailer*/
+.game trailer {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+#textgametrailer{
+
+    font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0); 
+}
+video {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left :20%;
+}
+
+#playPauseButton {
+    position: absolute;
+   left:47%;
+   bottom: -30%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0); /
+     
+}
+Button img{
+    opacity: 0;
+}
+
+#playPauseButton:hover {
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.trailer:hover Button img{
+    opacity: 1;
+}
+#forward {
+    position: absolute;
+   left:55%;
+   bottom: -30%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0); /
+     
+}
+#backward {
+    position: absolute;
+   left:39%;
+   bottom: -30%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0); /
+     
+}
+a{
+    color: gold;
+}
+/*footer css*/
+footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* Footer styles */
+    display: flex;
+    background-color: #120026;
+    list-style: none;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;   
+    zoom: 1.4; 
+}
+/*login screen*/
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #303943;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d5c7e;
+    color: #ffffff;
+}
+#login-button {
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-left:35%;
+    font-family: "Roboto Slab", serif;
+    
+}
+#login-button:hover{
+    transform: scale(1.15); /* Enlarge the card by 5% */
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5); /* Add a glowing shadow */
+}
+
+/*cart page*/#cart-items {
+  list-style: none; /* Remove default bullets */
+  padding:0 ;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+#cart-items li {
+  width: 250px;
+
+  margin:10px ;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color:  #408296;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#cart-items li img {
+width: 250px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+#cart-items li p::after {
+    content: '$';
+    font-weight: bold;
+    margin-left: 5px; /* Adjust the margin as needed */
+  }
+
+#cart-items li h3 {
+    text-shadow: 5px 0 5px rgba(0, 0, 0); 
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#cart-items li p {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 5px 0 5px rgba(0, 0, 0); 
+}
+
+#total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#cart #checkout-button{
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+    margin-bottom: 10px;
+font-weight:bold;
+    margin-left:46%;
+}
+#cart .cancel-button{
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+font-weight:bold;
+    
+}
